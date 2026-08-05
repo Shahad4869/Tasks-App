@@ -1,8 +1,8 @@
 // الانتقال من صفحة الترحيب
-const startButton = document.querySelector("button");
+const startButton = document.querySelector(".content button");
 
-if (startButton && window.location.pathname.includes("index.html")) {
-    startButton.addEventListener("click", () => {
+if (startButton) {
+    startButton.addEventListener("click", function () {
         window.location.href = "home.html";
     });
 }
