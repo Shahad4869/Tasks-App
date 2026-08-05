@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Tasks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+<div class="sky">
+    <div class="moon"></div>
+
+    <div class="shooting-star s1"></div>
+    <div class="shooting-star s2"></div>
+
+    <div class="constellation c1"></div>
+    <div class="constellation c2"></div>
+    <div class="constellation c3"></div>
+
+    <div class="stars-bg"></div>
+</div>
+<div class="top-bar">
+
+    <div class="progress-box">
+
+        <span id="progressText">⭐ 0 / 0 Tasks</span>
+
+        <div class="progress">
+            <div id="progressFill"></div>
+        </div>
+
+    </div>
+
+    <div class="stars">
+        ⭐ <span id="starCount">0</span>
+    </div>
+
+    <button id="themeBtn">🌙</button>
+
+</div>
+<div class="dashboard">
+
+    <div class="card">
+        <span>⭐ Stars</span>
+        <h2 id="dashboardStars">0</h2>
+    </div>
+
+    <div class="card">
+        <span>✅ Done</span>
+        <h2 id="dashboardDone">0</h2>
+    </div>
+
+    <div class="card">
+        <span>📋 Tasks</span>
+        <h2 id="dashboardTasks">0</h2>
+    </div>
+
+</div>
+    <div class="container">
+
+        <div class="task-box">
+
+            <h2>🌙 Add New Task</h2>
+
+            <input type="text" id="taskInput" placeholder="Task name">
+
+            <div class="row">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+            </div>
+
+            <select id="category">
+                <option>Study</option>
+                <option>Exam</option>
+                <option>Hospital</option>
+                <option>Personal</option>
+            </select>
+
+            <button id="addTask">
+                Add Task ⭐
+            </button>
+            <button id="clearTasks">
+    🗑️ Clear All
+</button>
+
+        </div>
+
+        <div id="taskList"></div>
+
+    </div>
+<div id="emptyMessage">
+
+    <div class="empty-icon">🐈‍⬛</div>
+
+    <h2>No Tasks Yet</h2>
+
+    <p>Start by adding your first task!</p>
+
+</div>
+    <div class="cat">
+        🐈‍⬛
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
