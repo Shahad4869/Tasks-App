@@ -1026,3 +1026,132 @@ opacity:0;
         font-size:35px;
     }
 }
+/* =========================
+   📱 Responsive Design
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* الكمبيوتر والآيباد */
+.container,
+.top-bar,
+.dashboard {
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* 📱 الجوال */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .home {
+        padding: 20px 12px;
+    }
+
+    .top-bar {
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .progress-box {
+        width: 100%;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    /* Dashboard */
+    .dashboard {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* المحتوى */
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    /* صندوق إضافة المهمة */
+    .task-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .task-box input,
+    .task-box select,
+    .task-box button {
+        max-width: 100%;
+    }
+
+    /* قائمة المهام */
+    #taskList {
+        width: 100%;
+    }
+
+    .task {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* No Tasks */
+    .empty-state {
+        width: 100%;
+        text-align: center;
+    }
+
+    .empty-state img {
+        max-width: 100%;
+    }
+}
+
+
+/* 📱 الآيباد */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .home {
+        padding: 25px;
+    }
+
+    .container,
+    .top-bar,
+    .dashboard {
+        width: 95%;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .task-box {
+        width: 100%;
+    }
+
+    #taskList {
+        width: 100%;
+    }
+}
